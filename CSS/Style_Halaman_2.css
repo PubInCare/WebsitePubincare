@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(231, 249, 255);
+}
+/*Navbar*/
+.parent_navbar{
+    height: 80px;
+    position: relative;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: lightblue;
+    position: fixed;
+    box-shadow: 2px 1px 5px lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+/*Logo*/
+.logo{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.gambarC{
+    width: 50px;
+    height: 100%;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.boxnamalogo{
+    width: 100px;
+    height: 100%;
+}
+.namaSIPC{
+    height: 50%;
+    font-family: 'Akaya Telivigala', cursive;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.namaku{
+    height: 50%;
+    font-family: 'Akaya Telivigala', cursive;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+/*Menu*/
+.boxmenu{
+    margin-top: 20px;
+    height: 60px;
+    width: 600px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/*--------------------------------------------------*/
+.menu_1{
+    width: 200px;
+    height: 100%;
+}
+.menu_2{
+    width: 200px;
+    height: 100%;
+}
+.menu_3{
+    width: 200px;
+    height: 100%;
+}
+/*---------------------------------------------------*/
+.isimenu_1, .isimenu_2, .isimenu_3{
+    width: 198px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    border-left: 1px solid rgb(162, 190, 199);
+    border-right: 1px solid rgb(162, 190, 199);
+}
+.barmenu_1, .barmenu_2, .barmenu_3{
+    width: 200px;
+    height: 5px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+.boxmenu:hover{
+    cursor: pointer;
+}
+.menu_1:hover .barmenu_1, .menu_2:hover .barmenu_2, .menu_3:hover .barmenu_3{
+    transform: scaleX(1);
+}
+.submenu1menu_1:hover, .submenu2menu_1:hover, .submenu1menu_2:hover, .submenu2menu_2:hover, .submenu3menu_2:hover, .submenu4menu_2:hover, .submenu1menu_3:hover, .submenu2menu_3:hover{
+    background-color: rgb(162, 190, 199);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes listmenu{
+    0%{
+        transform: scaleX(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*------------------------------------------*/
+.badan{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+.box_daftar{
+    height: 420px;
+    width: 500px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+tr{
+    height: 30px;
+}
+td:nth-child(2){
+    width: 300px;
+}
+.form{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.kirim{
+    height: 25px;
+    width: 100px;
+}
+.kirim:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}

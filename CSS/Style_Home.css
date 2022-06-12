@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(231, 249, 255);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+/*Navbar*/
+.parent_navbar{
+    height: 80px;
+    position: relative;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: lightblue;
+    position: fixed;
+    box-shadow: 2px 1px 5px lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+/*Logo*/
+.logo{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.gambarC{
+    width: 50px;
+    height: 100%;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.boxnamalogo{
+    width: 100px;
+    height: 100%;
+}
+.namaSIPC{
+    height: 50%;
+    font-family: 'Akaya Telivigala', cursive;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.namaku{
+    height: 50%;
+    font-family: 'Akaya Telivigala', cursive;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+/*Menu*/
+.boxmenu{
+    margin-top: 20px;
+    height: 60px;
+    width: 600px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/*--------------------------------------------------*/
+.menu_1{
+    width: 200px;
+    height: 100%;
+}
+.menu_2{
+    width: 200px;
+    height: 100%;
+}
+.menu_3{
+    width: 200px;
+    height: 100%;
+}
+/*---------------------------------------------------*/
+.isimenu_1, .isimenu_2, .isimenu_3{
+    width: 198px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    border-left: 1px solid rgb(162, 190, 199);
+    border-right: 1px solid rgb(162, 190, 199);
+}
+.barmenu_1, .barmenu_2, .barmenu_3{
+    width: 200px;
+    height: 5px;
+    background-color: yellow;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+.submenu1menu_1, .submenu2menu_1, .submenu1menu_2, .submenu2menu_2, .submenu3menu_2, .submenu4menu_2, .submenu1menu_3, .submenu2menu_3{
+    border-left: 1px solid rgb(162, 190, 199);
+    border-right: 1px solid rgb(162, 190, 199);
+    border-bottom: 1px solid rgb(162, 190, 199);
+    width: 198px;
+    height: 59px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    transform: scale(0);
+}
+.menu_1:hover .submenu1menu_1, .menu_2:hover .submenu1menu_2, .menu_3:hover .submenu1menu_3{
+    animation-name: listmenu;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.menu_1:hover .submenu2menu_1, .menu_2:hover .submenu2menu_2, .menu_3:hover .submenu2menu_3{
+    animation-delay: 100ms;
+    animation-name: listmenu;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.menu_2:hover .submenu3menu_2{
+    animation-delay: 200ms;
+    animation-name: listmenu;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.menu_2:hover .submenu4menu_2{
+    animation-delay: 300ms;
+    animation-name: listmenu;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.boxmenu:hover{
+    cursor: pointer;
+}
+.menu_1:hover .barmenu_1, .menu_2:hover .barmenu_2, .menu_3:hover .barmenu_3{
+    transform: scaleX(1);
+}
+.submenu1menu_1:hover, .submenu2menu_1:hover, .submenu1menu_2:hover, .submenu2menu_2:hover, .submenu3menu_2:hover, .submenu4menu_2:hover, .submenu1menu_3:hover, .submenu2menu_3:hover{
+    background-color: rgb(162, 190, 199);
+    cursor: pointer;
+}
+@keyframes listmenu{
+    0%{
+        transform: scaleX(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.boxtext{
+    height: 1000px;
+    width: 950px;
+    background-color: rgb(217, 239, 247);
+    font-family: 'Ravi Prakash', cursive;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px grey;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-left: 200px;
+}
+/*-----------------------------*/
+a{
+    text-decoration: none;
+    color: black;
+}
+/*------------------------------*/
+.footer{
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 10px;
+}
+.judul_footer{
+    font-family: 'Bree Serif', serif;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+}
+.kontak{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.kontak_kiri{
+    height: 70px;
+    width: 100%;
+    font-family: 'Bree Serif', serif;
+    text-align: right;
+    margin-right: 10px;
+}
+.kontak_kanan{
+    height: 70px;
+    width: 100%;
+    font-family: 'Bree Serif', serif;
+    margin-left: 10px;
+}
+.SIPC{
+    height:120px;
+    width: 950px;
+    background-color: rgb(217, 239, 247);
+    margin-top: 10px;
+    margin-left: 200px;
+    font-family: 'Ravi Prakash', cursive;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px grey;
+    box-sizing: border-box;
+    padding-left: 20px;
+}

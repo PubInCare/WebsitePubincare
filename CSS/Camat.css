@@ -1,0 +1,14 @@
+.Camat{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin:10px;
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: blue;
+    width: 100px;
+}
